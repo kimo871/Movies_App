@@ -33,11 +33,11 @@ function Results (props:any){
 
     return (
         <>
-        <div className="d-flex flex-wrap gap-3 pt-4 ">
+        <div className="d-flex flex-wrap gap-1 gap-md-3 pt-4 ">
         
         {props.Main && state.search.Movies.map((item:any)=>{
             return (
-                <div key={item.id} className="col-5 col-md-custom  ">
+                <div key={item.id} className="col-6 col-md-custom  ">
                 <div  className="card rounded-bottom-0 position-relative ">
                     <div className="layer"></div>
                     <div className="text"><span ><FontAwesomeIcon  icon={faCirclePlay} /></span>

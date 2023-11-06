@@ -1,6 +1,6 @@
 
 import { useEffect , useContext  } from 'react';
-import { Search_Movies , Add_Item , Delete_Item , Delete_All } from '../context/ActionCreators';
+import { Add_Item , Delete_Item  } from '../context/ActionCreators';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay ,faNotesMedical  , faHeart , faEye , faClose  } from '@fortawesome/free-solid-svg-icons'
 import {Context} from '../context/context'
@@ -51,9 +51,9 @@ function Results (props:any){
                     
                     
                       <div className="d-flex gap-3 ">
-                      <span onClick={(e)=> AddItem(item,"ADD_MOVIE_FAVORITE","favorites")}><FontAwesomeIcon icon= { faHeart} /></span>
-                      <span onClick={(e)=>AddItem(item,"ADD_MOVIE_WATCHED","watched")}><FontAwesomeIcon  icon= { faEye} /></span>
-                      <span onClick={(e)=> AddItem(item,"ADD_MOVIE_WATCHLIST","watchlist")}><FontAwesomeIcon icon= { faNotesMedical} /></span>
+                      <span onClick={()=> AddItem(item,"ADD_MOVIE_FAVORITE","favorites")}><FontAwesomeIcon icon= { faHeart} /></span>
+                      <span onClick={()=>AddItem(item,"ADD_MOVIE_WATCHED","watched")}><FontAwesomeIcon  icon= { faEye} /></span>
+                      <span onClick={()=> AddItem(item,"ADD_MOVIE_WATCHLIST","watchlist")}><FontAwesomeIcon icon= { faNotesMedical} /></span>
                       </div>
                 
                 </div>
@@ -82,7 +82,7 @@ function Results (props:any){
                 
             
                     <div className="d-flex gap-3 ">
-                    <span onClick={(e)=> DeleteItem(item[0],props.category)}><FontAwesomeIcon icon= { faClose} /></span>
+                    <span onClick={()=> DeleteItem(item[0],props.category)}><FontAwesomeIcon icon= { faClose} /></span>
                     </div>
                     
                 

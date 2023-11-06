@@ -1,11 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link} from 'react-router-dom'
-import {useRef , useEffect , useState } from 'react'
+import {useRef , useEffect  } from 'react'
 
 function Nav({theme,position,changeTheme , changePosition , background , changeBackground}:any) {
   const object2 : any = useRef(null)
-  const  [show , setShow] = useState(false)
   useEffect(()=>{
     window.onscroll = ()=>{
       if(window.scrollY > 0){

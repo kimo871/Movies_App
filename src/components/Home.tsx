@@ -1,13 +1,10 @@
-import { useEffect, useRef , useState    } from 'react'
-//import Skeleton from '@mui/material/Skeleton'
+import { useEffect, useRef  } from 'react'
 import Nav from './Nav'
 import Search from "./Search"
 import Footer from './Footer'
 import Carousell from './Carousell'
-//const Carousell = lazy(()=> import("./Carousell"))
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
-import { Carousel } from 'react-bootstrap';
 function Home (){
     const object1 = useRef(null)
   

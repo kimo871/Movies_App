@@ -1,9 +1,7 @@
 import Results from './Results'
 
 import { useEffect , useContext , useRef  } from 'react';
-import { Get_Genres , Search_Movies } from '../context/ActionCreators';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import {  Search_Movies } from '../context/ActionCreators';
 import {Context} from '../context/context'
 
 function Search (){

@@ -205,6 +205,7 @@ select:focus{
 
 @media(max-width:789px){
   .caption{margin-top:60px}
+  .banner{margin-left:25% !important;}
   
 }
 @media(min-width:790px){
@@ -212,8 +213,9 @@ select:focus{
   .caption{min-height:80vh;  }
   .caption > div:first-of-type{text-align:left;}
   .col-md-custom{
-    width:11%  !important;
+    width:14%  !important;
   }
+  
 }
 
 

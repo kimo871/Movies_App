@@ -28,7 +28,7 @@ function Carousell() {
 
          <div className="overview col-12 col-lg-6 ">
 
-          <div  className="alert alert-danger ps-3 pe-3 pt-1 pb-1 btn-dark-red border border-0 w-50  " role="alert">
+          <div  className="alert alert-danger ps-3 pe-3 pt-1 pb-1 btn-dark-red border border-0 w-50  banner " role="alert">
             UpComing Movies
           </div>
 
